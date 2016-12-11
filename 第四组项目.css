@@ -131,3 +131,165 @@ body,div,ul,li,p,h1,h2,h3,input,button{
 	border-radius: 10px;
 	background-color: skyblue;
 }
+  
+
+ /*飒飒的第三个页面*/
+.ys_box{
+        position: absolute;
+        width: 100%;
+        height: 900px;
+        background: url(img/bg3.jpg);
+        top: 80px;
+        
+
+}
+.ys_content{
+	        font: 900 60px/60px "宋体";
+	        color: skyblue;
+	        position: absolute;
+	        top: 40%;
+	        left: 20%;
+         /* border: 1px solid black;*/
+          width: 1200px;
+          height: 500px;
+}
+
+.ys_content .ys_ul{
+       list-style: none;
+       overflow: hidden;
+       position: absolute;
+       bottom: 60px;
+       left: 0px;
+       z-index: 1;
+
+
+}
+.ys_ul div:nth-child(1),.ys_ul div:nth-child(2){
+                         width: 219px;
+                         height: 133px;
+                         overflow: hidden;
+}
+.ys_ul div:nth-child(3){
+                        width: 222px;
+                        height: 132px;
+                        overflow: hidden;
+}
+.ys_ul div:nth-child(4){
+                        width: 332px;
+                        height: 132px;
+                        overflow: hidden;
+}
+.ys_ul div{
+           float: left;
+           cursor: pointer;
+}
+.ys_ul li:nth-child(1){
+                       transition: all 1s ease 0s;
+                       position: relative;
+                     
+}
+.ys_ul li:nth-child(2){
+                       transition: all 1s ease 0s;
+                       position: relative;
+                      /* overflow: hidden;*/
+                      border: 3px solid blue;
+}
+.ys_ul li:nth-child(3){
+                       transition: all 1s ease 0s;
+                       position: relative;
+                      /* overflow: hidden;*/
+}
+.ys_ul li:nth-child(4){
+                       transition: all 1s ease 0s;
+                       position: relative;
+                      /* overflow: hidden;*/
+}
+.ys_ul li:nth-child(3):hover{
+                             transform: scale(1.2,1.2)rotate(-5deg);
+                           /*  transform: rotate(45deg);*/
+}
+
+.ys_ul li:nth-child(4):hover{
+                             transform: scale(1.2,1.2)rotate(-5deg);
+                           /*  transform: rotate(45deg);*/
+}
+.ys_ul li:nth-child(2):hover{
+                             transform: scale(1.2,1.2)rotate(-5deg);
+                           /*  transform: rotate(45deg);*/
+}
+.ys_ul li:nth-child(1):hover{
+                             transform: scale(1.2,1.2)rotate(-5deg);
+                           /*  transform: rotate(45deg);*/
+}
+.ys_ul li:nth-child(1)::before{
+                               content: "computer";
+                               display: block;
+                               width: 219px;
+                               height: 133px;
+                               background: gray;
+                               opacity: 0;
+                               position: absolute;
+                               top: 0px;
+                               left: 0px;
+                               font: 600 40px/133px "宋体";
+                               color: red;
+                               text-align: center;
+                               transition: all 1s ease 0s;
+}
+.ys_ul li:nth-child(2)::before{
+                               content: "book";
+                               display: block;
+                               width: 222px;
+                               height: 130px;
+                               background: gray;
+                               opacity: 0;
+                               position: absolute;
+                               top: 0px;
+                               left: 0px;
+                               font: 600 40px/133px "宋体";
+                               color: red;
+                               text-align: center;
+                               transition: all 1s ease 0s;
+}
+
+
+.ys_ul li:nth-child(1):hover::before{
+                                     opacity: 0.8;
+}
+
+.ys_picture{
+            width: 800px;
+            position: absolute;
+            top: 10px;
+            left: 20%;
+            height: 300px;
+}
+.ys_picture img:nth-child(1){
+                             position: absolute;
+                             top: 0px;
+                             left: 40px;
+}
+.ys_picture img:nth-child(2){
+                             position: absolute;
+                             top: 150px;
+                             left: 0px;
+}
+.ys_picture img:nth-child(3){
+                             position: absolute;
+                             bottom: 5px;
+                             left: 40%;
+                             animation: yidong 2s linear 0s infinite alternate;
+
+}
+/*机器人的动画*/
+@-webkit-keyframes yidong{
+                          from{ left: 40%; }
+                          to{left:70%;}
+}
+.ys_picture img:nth-child(4){
+                             position: absolute;
+                             bottom: -160px;
+                             left: 50%;
+                             /*z-index: -1;*/
+
+}
